@@ -23,3 +23,14 @@ export type User = {
   preferredVenue: PreferredVenue | null;
   profileComplete: boolean;
 };
+
+export type HeroMovie = {
+  id: number;
+  title: string;
+  category: string;
+  ageRating: string;
+  duration: string;
+  formats: string[];
+  description: string;
+  backdropUrl: string;
+};
