@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { MovieCard } from "./MovieCard";
-import { MOCK_NOW_PLAYING } from "../../data/nowPlayingMovies";
+import { MovieCard } from "./common/MovieCard";
+import { MOCK_NOW_PLAYING } from "../data/nowPlayingMovies";
 
 export const NowPlayingSection: React.FC = () => {
   return (
