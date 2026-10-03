@@ -13,7 +13,7 @@ export const ComingSoonSection: React.FC = () => {
 
         <Link
           to="/sessions"
-          className="text-xs font-bold uppercase text-[#EC3013] hover:underline transition-all"
+          className="text-[14px] font-semibold text-[#EC3013] hover:underline transition-all"
         >
           See all
         </Link>
