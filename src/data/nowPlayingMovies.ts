@@ -1,0 +1,105 @@
+import type { Movie } from "../types";
+
+export const MOCK_NOW_PLAYING: Movie[] = [
+  {
+    id: 1,
+    slug: "buddy-1514026",
+    title: "Buddy",
+    kind: "film",
+    runtimeMinutes: 95,
+    posterUrl:
+      "https://image.tmdb.org/t/p/w500/szMG36D2cIxeQ7i5zRQbq0DnNDe.jpg",
+    backdropUrl:
+      "https://image.tmdb.org/t/p/w1280/ytoLEl5yDaxB8AtZ52uKWjaQ9ql.jpg",
+    releaseDate: "2026-08-27",
+    isComingSoon: false,
+    fromPrice: 12,
+    ageRating: {
+      code: "16+",
+      minAge: 16,
+      description: "Restricted to viewers aged 16 and over.",
+    },
+    genres: [{ id: 4, slug: "horror", name: "Horror" }],
+    formats: [{ id: 4, name: "PANORAMA" }],
+  },
+  {
+    id: 2,
+    slug: "spider-man",
+    title: "Spider-Man",
+    kind: "film",
+    runtimeMinutes: 102,
+    posterUrl:
+      "https://image.tmdb.org/t/p/w500/8ptf4s1q0uNgh0ClyBst4LecU7q.jpg",
+    backdropUrl:
+      "https://image.tmdb.org/t/p/w1280/ytoLEl5yDaxB8AtZ52uKWjaQ9ql.jpg",
+    releaseDate: "2026-08-27",
+    isComingSoon: false,
+    fromPrice: 14,
+    ageRating: {
+      code: "18+",
+      minAge: 18,
+      description: "Restricted to 18+",
+    },
+    genres: [{ id: 1, slug: "thriller", name: "Thriller" }],
+    formats: [{ id: 1, name: "MAX" }],
+  },
+  {
+    id: 3,
+    slug: "dune-part-three",
+    title: "Dune: Part Three",
+    kind: "film",
+    runtimeMinutes: 102,
+    posterUrl: "https://image.tmdb.org/t/p/w500/x119L23P3I03x2I0uG1S.jpg",
+    backdropUrl: "",
+    releaseDate: "2026-08-27",
+    isComingSoon: false,
+    fromPrice: 14,
+    ageRating: {
+      code: "18+",
+      minAge: 18,
+      description: "Restricted to 18+",
+    },
+    genres: [{ id: 1, slug: "sci-fi", name: "Sci-Fi" }],
+    formats: [{ id: 1, name: "MAX" }],
+  },
+  {
+    id: 4,
+    slug: "joker",
+    title: "Joker",
+    kind: "film",
+    runtimeMinutes: 122,
+    posterUrl: "https://image.tmdb.org/t/p/w500/udDclC231432s.jpg",
+    backdropUrl: "",
+    releaseDate: "2026-08-27",
+    isComingSoon: false,
+    fromPrice: 14,
+    ageRating: {
+      code: "18+",
+      minAge: 18,
+      description: "Restricted to 18+",
+    },
+    genres: [{ id: 2, slug: "drama", name: "Drama" }],
+    formats: [{ id: 2, name: "STANDARD" }],
+  },
+  {
+    id: 5,
+    slug: "buddy-1514026",
+    title: "Buddy",
+    kind: "film",
+    runtimeMinutes: 95,
+    posterUrl:
+      "https://image.tmdb.org/t/p/w500/szMG36D2cIxeQ7i5zRQbq0DnNDe.jpg",
+    backdropUrl:
+      "https://image.tmdb.org/t/p/w1280/ytoLEl5yDaxB8AtZ52uKWjaQ9ql.jpg",
+    releaseDate: "2026-08-27",
+    isComingSoon: false,
+    fromPrice: 12,
+    ageRating: {
+      code: "16+",
+      minAge: 16,
+      description: "Restricted to viewers aged 16 and over.",
+    },
+    genres: [{ id: 4, slug: "horror", name: "Horror" }],
+    formats: [{ id: 4, name: "PANORAMA" }],
+  },
+];
