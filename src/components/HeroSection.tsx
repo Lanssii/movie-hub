@@ -38,16 +38,16 @@ export const HeroSection: React.FC = () => {
   };
 
   return (
-    <section className="relative w-full max-h-[760px] bg-[#070C1C] flex flex-col justify-between overflow-hidden">
+    <section className="relative w-full h-[760px] bg-[#070C1C] flex flex-col justify-between overflow-hidden">
       {/* Hero background image */}
       <div className="absolute inset-0 z-0">
         <img
           src={currentMovie.backdropUrl}
           alt={currentMovie.title}
-          className="w-full h-full object-cover transition-all duration-700 ease-in-out scale-105"
+          className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-[#070C1C] via-[#070C1C]/80 to-transparent w-full md:w-3/4" />
-        <div className="absolute inset-0 bg-gradient-to-t from-[#070C1C] via-transparent to-[#070C1C]/60" />
+        <div className="absolute inset-0 bg-gradient-to-r from-[#0000001A] via-[#070C1C]/60 to-transparent w-full" />
+        <div className="absolute inset-0 bg-gradient-to-t from-[#0000001A] via-transparent to-[#070C1C]/90" />
       </div>
 
       {/* Content */}
