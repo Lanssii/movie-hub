@@ -5,6 +5,7 @@ import { Home } from "./pages/Home";
 import SessionsPage from "./pages/SessionsPage";
 import MovieDetailsPage from "./pages/MovieDetailsPage";
 import ProfilePage from "./pages/ProfilePage";
+import { AuthModal } from "./components/modal/AuthModal";
 
 export function App() {
   return (
@@ -19,6 +20,8 @@ export function App() {
             <Route path="/movie/:id" element={<MovieDetailsPage />} />
             <Route path="/profile" element={<ProfilePage />} />
           </Routes>
+
+          <AuthModal />
         </main>
 
         <Footer />
