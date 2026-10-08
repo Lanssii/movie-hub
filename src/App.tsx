@@ -3,7 +3,7 @@ import { Header } from "./components/common/Header";
 import { Footer } from "./components/common/Footer";
 import { Home } from "./pages/Home";
 import SessionsPage from "./pages/SessionsPage";
-import MovieDetailsPage from "./pages/MovieDetailsPage";
+import { MovieDetailsPage } from "./pages/MovieDetailsPage";
 import { ProfilePage } from "./pages/ProfilePage";
 import { AuthModal } from "./components/modal/AuthModal";
 
