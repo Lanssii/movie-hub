@@ -5,7 +5,7 @@ import { MOCK_NOW_PLAYING } from "../data/nowPlayingMovies";
 
 export const NowPlayingSection: React.FC = () => {
   return (
-    <section className="mx-auto w-full max-w-[1920px] px-6 md:px-[67px] py-12">
+    <section className="mx-auto w-full max-w-[1800px] px-6 md:px-[67px] py-12">
       <div className="flex items-center justify-between mb-6">
         <h2 className="text-xl md:text-2xl uppercase font-extrabold">
           Now Playing

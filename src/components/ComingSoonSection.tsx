@@ -5,7 +5,7 @@ import { MOCK_COMING_SOON } from "../data/comingSoonMovies";
 
 export const ComingSoonSection: React.FC = () => {
   return (
-    <section className="mx-auto w-full max-w-[1920px] px-6 md:px-[67px] py-12">
+    <section className="mx-auto w-full max-w-[1800px] px-6 md:px-[67px] py-12">
       <div className="flex items-center justify-between mb-6">
         <h2 className="text-2xl md:text-3xl font-black uppercase tracking-wide text-white">
           Coming Soon...

@@ -51,7 +51,7 @@ export const HeroSection: React.FC = () => {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 mx-auto w-full max-w-[1920px] px-6 md:px-[67px] pt-[160px] pb-[84px] flex-1 flex flex-col justify-center">
+      <div className="relative z-10 mx-auto w-full max-w-[1800px] px-6 md:px-[67px] pt-[160px] pb-[84px] flex-1 flex flex-col justify-center">
         <div className="max-w-[580px] animate-in fade-in duration-500">
           <span className="text-[12px] font-semibold uppercase text-[#EC3013] bg-[#EC30131A] rounded-full px-1.5 py-2.5">
             {currentMovie.category}
@@ -127,7 +127,7 @@ export const HeroSection: React.FC = () => {
       </div>
 
       {/* bottom slider navigation lines */}
-      <div className="relative z-10 mx-auto w-full max-w-[1920px] px-6 md:px-[60px] pb-10 flex items-center justify-between gap-6">
+      <div className="relative z-10 mx-auto w-full max-w-[1800px] px-6 md:px-[60px] pb-10 flex items-center justify-between gap-6">
         <div className="flex-1 max-w-[800px] flex items-center gap-[7px]">
           {HERO_MOVIES.map((_, idx) => (
             <button

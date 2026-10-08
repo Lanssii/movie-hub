@@ -57,31 +57,39 @@ export const registerSchema = z
     path: ["confirmPassword"],
   });
 
+export const profileSchema = z.object({
+  fullName: z.string().min(1, "Full name is required"),
+  email: z.string().email(),
+  mobileNumber: z
+    .string()
+    .min(1, "Mobile number is required")
+    .regex(/^5\d{8}$/, "Enter valid Georgian mobile number (5XXXXXXXX)"),
+  dateOfBirth: z.string().min(1, "Date of birth is required"),
+  preferredVenue: z.string().optional(),
+});
+
+export type ProfileFormData = z.infer<typeof profileSchema>;
+
 type AuthState = {
   user: User | null;
   isAuthenticated: boolean;
   setUser: (user: User | null) => void;
+  updateProfile: (updatedData: Partial<User>) => void;
   logout: () => void;
 };
 
 export const useAuthStore = create<AuthState>((set) => ({
-  // mocked data for user
-  // user: {
-  //   id: 1,
-  //   username: "Lana",
-  //   email: "lana@example.com",
-  //   avatar: null,
-  //   fullName: "Lana Shotashvili",
-  //   mobileNumber: "599123456",
-  //   dateOfBirth: "2005-02-01",
-  //   age: 21,
-  //   preferredVenue: null,
-  //   profileComplete: false,
-  // },
-  //  isAuthenticated: true,
   user: null,
   isAuthenticated: false,
 
   setUser: (user) => set({ user, isAuthenticated: !!user }),
+
+  updateProfile: (updatedData) =>
+    set((state) => ({
+      user: state.user
+        ? { ...state.user, ...updatedData, profileComplete: true }
+        : null,
+    })),
+
   logout: () => set({ user: null, isAuthenticated: false }),
 }));

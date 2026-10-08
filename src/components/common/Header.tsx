@@ -30,7 +30,7 @@ export const Header: React.FC = () => {
   return (
     <header className="absolute top-0 left-0 z-40 w-full bg-transparent pt-[30px] pb-[40px]">
       {/* Logo */}
-      <div className="mx-auto flex max-w-[1920px] items-center justify-between gap-6 px-6 md:px-[60px]">
+      <div className="mx-auto flex max-w-[1800px] items-center justify-between gap-6 px-6 md:px-[60px]">
         <div className="flex items-center gap-9">
           <Link to="/">
             <img src="/images/logo.svg" alt="brand-logo" />
